@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative; 
+    background-color: #000; /
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/yay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: brightness(40%);
+    z-index: -1; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    border: 30px;
+}
+
+.logo {
+    flex: 1;
+    text-align: left;
+}
+
+nav {
+    flex: 2;
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+    background-color: #bbb;
+    border-radius: 4px;
+}
+
+nav:hover{
+    color: rgb(0, 0, 0);
+    padding: 6px;
+}
+
+.banner {
+    background-color: #bbb;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 3px;
+}
+
+.introduction {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; 
+}
+
+.introductions {
+    background-color: #bbb;
+    padding: 20px 0 0 0;
+    margin: 20px;
+    width: max-content;
+    height: max-content;
+    border-radius: 4px;
+}
+
+
+.introductions h2 {
+    background-color: #ccc;
+    padding: 20px;
+    border-color: #ddd;
+    border-radius: 4px;
+}
+
+.introductions img{
+    border-radius: 4px;
+}
