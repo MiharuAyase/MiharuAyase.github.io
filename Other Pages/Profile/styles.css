@@ -1,6 +1,19 @@
+@media screen and (max-width: 600px) {
+    .box {
+        flex: 1 1 100%; 
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     position: relative; 
     background-color: #000; /
 }
@@ -34,6 +47,7 @@ header {
     background-color: #ddd;
     border-radius: 5px;
     border: 30px;
+    margin-bottom: 10px;
 }
 
 .logo {
@@ -60,35 +74,53 @@ nav:hover{
 }
 
 .banner {
-    background-color: #bbb;
     text-align: center;
     margin: 20px 0;
     border-radius: 3px;
-}
-
-.introduction {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px; 
-}
-
-.introductions {
-    background-color: #bbb;
-    padding: 20px 0 0 0;
-    margin: 20px;
-    width: max-content;
+    background-color: #ddd;
     height: max-content;
-    border-radius: 4px;
+
 }
 
-
-.introductions h2 {
-    background-color: #ccc;
-    padding: 20px;
-    border-color: #ddd;
+.banner h2 {
+    font-size: 30px;
+    font-family: 'Quicksand',sans-serif;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
     border-radius: 4px;
+    gap: 20px;
+    justify-content: center;
 }
 
-.introductions img{
+.box {
+    position: relative;
+    flex: 1  1 300px;
+    max-width: 400px;
+    text-align: center;
     border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: #bbb;
+}
+
+.box img{
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.box h2 {
+    background-color: #ddd;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.box p {
+    background-color: #ddd;
+    height:100%;
+    font-family: 'Quicksand', sans-serif;
 }
